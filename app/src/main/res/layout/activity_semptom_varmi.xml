@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".semptomVarmi"
+    android:background="@drawable/health_insurance"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/text_size"
+        lottie_autoPlay="true"
+        lottie_colorFilter="@color/colorAccent"
+        lottie_fileName="heart_rate.json"
+        lottie_loop="true"/>
+    <TextView
+        android:background="@color/hardTransparentBlack"
+        android:textColor="@color/white"
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="Lütfen aşağıda verilen şikayetlerden sizde bulunan veya görülenleri işaretleyiniz." />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:padding="3dp"
+        android:background="@drawable/edittextborder"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView7"
+        android:orientation="vertical">
+
+
+        <CheckBox
+            android:id="@+id/cbAtes"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Ateş" />
+
+        <CheckBox
+            android:id="@+id/cbBurunA"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Burun Akıntısı" />
+        <CheckBox
+            android:id="@+id/cbOksuruk"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Öksürük" />
+        <CheckBox
+            android:id="@+id/cbMideB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Mide Bulantısı" />
+        <CheckBox
+            android:id="@+id/cbBasA"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Baş Ağrısı" />
+        <CheckBox
+            android:id="@+id/cbKusma"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Kusma" />
+        <CheckBox
+            android:id="@+id/cbBasD"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Baş Dönmesi" />
+        <CheckBox
+            android:id="@+id/cbKanama"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Kanama" />
+        <CheckBox
+            android:id="@+id/cbIshal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="İshal" />
+        <CheckBox
+            android:id="@+id/cbKabizlik"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Kabızlık" />
+        <CheckBox
+            android:id="@+id/cbDiger"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Diğer" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ikisfileri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="ikisfileriButton"
+        android:text="İleri" />
+
+
+    <Button
+        android:id="@+id/ikisfgeri"
+        android:onClick="onClickikisfgerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="Geri" />
+
+</RelativeLayout>
